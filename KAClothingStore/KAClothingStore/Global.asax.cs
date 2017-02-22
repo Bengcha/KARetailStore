@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using KAClothingStore.Domain.Entities;
+using KAClothingStore.Binders;
+
 
 namespace KAClothingStore
 {
@@ -13,6 +16,8 @@ namespace KAClothingStore
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
+            ModelBinders.Binders.Add(typeof(Cart), new CartModelBinder());
         }
     }
 }
