@@ -6,6 +6,7 @@ using Moq;
 using KAClothingStore.Domain.Abstract;
 using KAClothingStore.Domain.Entities;
 using KAClothingStore.Domain.Concrete;
+using System.Configuration;
 
 namespace KAClothingStore.Infrastructure
 { public class NinjectDependencyResolver : IDependencyResolver
@@ -26,6 +27,14 @@ namespace KAClothingStore.Infrastructure
         private void AddBindings()
         {
           kernel.Bind<IProductsRepository>().To<EFProductRepository>();
+
+            EmailSettings emailSettings = new EmailSettings
+            {
+                WriteAsFile = bool.Parse(ConfigurationManager.AppSettings["Email.WriteAsFile"] ?? "false")
+            };
+
+            kernel.Bind<IOrderProcessor>().To<EmailOrderProcessor>()
+                .WithConstructorArgument("settings", emailSettings);
         }
     }
 }
