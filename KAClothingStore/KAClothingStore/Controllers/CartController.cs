@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using KAClothingStore.Domain.Abstract;
 using KAClothingStore.Domain.Entities;
+using KAClothingStore.Models;
 
 namespace KAClothingStore.Controllers
 {
@@ -14,6 +15,14 @@ namespace KAClothingStore.Controllers
         public CartController(IProductsRepository repo)
         {
             repository = repo;
+        }
+
+        public ViewResult Index(string returnUrl)
+        {
+            return View(new CartIndexViewModel
+            {
+                Cart = GetCart(), ReturnUrl = returnUrl
+            });
         }
         public RedirectToRouteResult AddToCart(int productId, string returnUrl)
         {
