@@ -18,8 +18,9 @@ namespace KAClothingStore.Controllers
             ViewBag.SelectedCategory = category;
             IEnumerable<string> categories = repository.Products
                 .Select(x => x.Category)
-                .Distinct().OrderBy(x => x);
-            return PartialView(categories);
+                .Distinct()
+                .OrderBy(x => x);
+            return PartialView("FlexMenu", categories);
         }
     }
 }
