@@ -7,6 +7,8 @@ using KAClothingStore.Domain.Abstract;
 using KAClothingStore.Domain.Entities;
 using KAClothingStore.Domain.Concrete;
 using System.Configuration;
+using KAClothingStore.Infrastructure.Abstract;
+using KAClothingStore.Infrastructure.Concrete;
 
 namespace KAClothingStore.Infrastructure
 { public class NinjectDependencyResolver : IDependencyResolver
@@ -35,6 +37,8 @@ namespace KAClothingStore.Infrastructure
 
             kernel.Bind<IOrderProcessor>().To<EmailOrderProcessor>()
                 .WithConstructorArgument("settings", emailSettings);
+
+            kernel.Bind<IAuthProvider>().To<FormsAuthProvider>();
         }
     }
 }
