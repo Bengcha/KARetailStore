@@ -91,3 +91,12 @@ h4{
 strong {
     color:black;
 }
+
+textarea{
+    margin-top: 100px;
+    width: 600px;
+}
+
+#display{
+    color:white;
+}
