@@ -19,6 +19,8 @@ namespace KAFashion.Models
         [Required(ErrorMessage = "Please specify a category")]
         public string Category { get; set; }
         [Range(0.01, double.MaxValue, ErrorMessage = "Please enter a positive price")]
-        public decimal Price {get; set;}
+        public decimal Price { get; set; }
+        public byte[] ImageData { get; set; }
+        public string ImageMimeType { get; set; }
     }
 }
