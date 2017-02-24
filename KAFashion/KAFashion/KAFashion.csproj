@@ -18,9 +18,9 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
+    <IISExpressSSLPort>44318</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
@@ -246,9 +246,9 @@
     <Compile Include="HtmlHelpers\PagingHelpers.cs" />
     <Compile Include="Infrastructure\Binder\CartModelBinder.cs" />
     <Compile Include="Infrastructure\NinjectDependencyResolver.cs" />
-    <Compile Include="Migrations\201702232228007_adding product.cs" />
-    <Compile Include="Migrations\201702232228007_adding product.Designer.cs">
-      <DependentUpon>201702232228007_adding product.cs</DependentUpon>
+    <Compile Include="Migrations\201702240915032_adding data.cs" />
+    <Compile Include="Migrations\201702240915032_adding data.Designer.cs">
+      <DependentUpon>201702240915032_adding data.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -267,6 +267,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\ErrorStyles.css" />
+    <Content Include="Content\Image\fashion1.jpg" />
+    <Content Include="Content\Image\fashion2.jpeg" />
+    <Content Include="Content\Image\homepage.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -357,8 +360,8 @@
     <Content Include="Scripts\jquery-3.1.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201702232228007_adding product.resx">
-      <DependentUpon>201702232228007_adding product.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702240915032_adding data.resx">
+      <DependentUpon>201702240915032_adding data.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

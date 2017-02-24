@@ -54,14 +54,14 @@ namespace KAFashion
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "1218402888214447",
+               appSecret: "e8b3e626bc1a16e5e6a478d2e1b894bc");
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
-            //    ClientId = "",
-            //    ClientSecret = ""
+            //    ClientId = "581928134302-cf4taffvgv9r2l9l3v56ntuuggnqak8o.apps.googleusercontent.com",
+            //    ClientSecret = "T2r7HplZb8dzIQI_hDa2xuV_"
             //});
         }
     }

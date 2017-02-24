@@ -30,7 +30,7 @@ namespace KAFashion.Concrete
                     dbEntry.Description = product.Description;
                     dbEntry.Price = product.Price;
                     dbEntry.Category = product.Category;
-                    dbEntry.ImageData = product.ImageData;
+                    dbEntry.PictureData = product.PictureData;
                     dbEntry.ImageMimeType = product.ImageMimeType;
                 }
             }

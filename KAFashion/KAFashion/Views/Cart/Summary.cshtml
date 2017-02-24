@@ -6,7 +6,7 @@
     })
     </div>
 <div class="navbar-text navbar-right">    
-    <b>Your cart:</b>    
+    <b class="cart">Your cart:</b>    
     @Model.Lines.Sum(x => x.Quantity) item(s),    
     @Model.ComputeTotalValue().ToString("c")
 </div>

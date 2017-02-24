@@ -3,7 +3,7 @@ namespace KAFashion.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class addingproduct : DbMigration
+    public partial class addingdata : DbMigration
     {
         public override void Up()
         {
@@ -12,10 +12,12 @@ namespace KAFashion.Migrations
                 c => new
                     {
                         ProductId = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
-                        Description = c.String(),
-                        Category = c.String(),
+                        Name = c.String(nullable: false),
+                        Description = c.String(nullable: false),
+                        Category = c.String(nullable: false),
                         Price = c.Decimal(nullable: false, precision: 18, scale: 2),
+                        PictureData = c.Binary(),
+                        ImageMimeType = c.String(),
                     })
                 .PrimaryKey(t => t.ProductId);
             

@@ -22,7 +22,7 @@ namespace KAFashion.Models
     {
         DbSet<Product> Products { get; set; }
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("EFDbContext", throwIfV1Schema: false)
         {
         }
 

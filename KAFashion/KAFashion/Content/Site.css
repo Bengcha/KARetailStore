@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color : black;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +22,72 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.menubar
+{
+   vertical-align: middle;
+   display: inline-block;
+}
+
+.btn-default
+{
+    border-color: none;
+
+}
+
+.homepage
+{
+    width: 100%;
+
+}
+
+.cart{
+    color: white;
+}
+
+#categories
+{
+    color:white;
+}
+
+.table {
+    color:white;
+    border-style: none;
+}
+
+label{
+    color:white;
+}
+
+.container{
+    width: 60%;
+}
+
+p{
+    color:white;
+}
+
+h2{
+    color:white;
+}
+
+form {
+    color:white;
+}
+
+li {
+    list-style: none;
+}
+
+h3 {
+    color:white;
+}
+
+h4{
+    color:white;
+}
+
+strong {
+    color:black;
 }

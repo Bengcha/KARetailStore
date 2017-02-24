@@ -7,13 +7,13 @@ namespace KAFashion.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class addingproduct : IMigrationMetadata
+    public sealed partial class addingdata : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addingproduct));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addingdata));
         
         string IMigrationMetadata.Id
         {
-            get { return "201702232228007_adding product"; }
+            get { return "201702240915032_adding data"; }
         }
         
         string IMigrationMetadata.Source

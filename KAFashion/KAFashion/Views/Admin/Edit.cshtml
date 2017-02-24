@@ -21,7 +21,7 @@
                 switch (property.PropertyName)
                 {
                     case "ProductId":
-                    case "ImageData":
+                    case "PictureData":
                     case "ImageMimeType":
                        
                         break;
@@ -56,7 +56,7 @@
                     </a>
                     <span class='label label-info' id="upload-file-info"></span>
                 </div>
-                @if (Model.ImageData == null)
+                @if (Model.PictureData == null)
                 {
                     <div class="form-control-static">No Image</div>
                 }

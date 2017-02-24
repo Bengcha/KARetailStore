@@ -43,7 +43,7 @@ namespace KAFashion.Controllers
                 .FirstOrDefault(p => p.ProductId == productId);
             if (prod != null)
             {
-                return File(prod.ImageData, prod.ImageMimeType);
+                return File(prod.PictureData, prod.ImageMimeType);
             }
             else
             {
